@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413.03 499.74">
+	<defs>
+		<style>
+			.cls-1{fill:none;stroke:#db5e34;stroke-miterlimit:10;stroke-width:3px;}
+			.cls-2{font-size:127.09px;font-family:'Raleway';font-weight:800;letter-spacing:0.09em;}
+			.cls-3{letter-spacing:0.1em;}
+		</style>
+	</defs>
+	<title>logo</title>
+	<rect id="toprect" class="cls-1" x="75.47" y="135.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
+	<rect class="cls-1" x="135.47" y="75.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
+	<rect id="bttmrect" class="cls-1" x="105.47" y="105.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
+	<text fill="#db5e34" class="cls-2" transform="translate(121.3 295.75)">
+		T<tspan class="cls-3" x="90.61" y="0">C</tspan>
+	</text>
+</svg>

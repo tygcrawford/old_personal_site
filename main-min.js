@@ -1,0 +1,1 @@
+$(()=>{setTimeout(()=>{$("#hamburger-containter").removeClass("prevent-animation")},750),$("#hamburger-containter").click(()=>{$("#hamburger-containter").toggleClass("hamburger-open"),$("#hamburger-containter").toggleClass("hamburger-close")})});
