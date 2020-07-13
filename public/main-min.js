@@ -1,0 +1,1 @@
+$(()=>{$("#hamburger-containter").click(()=>{$("#hamburger-containter").toggleClass("hamburger-open"),$("#nav-slider").toggleClass("slider-open"),$("#dark-overlay").fadeToggle(350)})});

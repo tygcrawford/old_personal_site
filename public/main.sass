@@ -1,0 +1,169 @@
+$main: #11142D
+$main-light: #1B1F46
+$highlight: #DB5E34
+$light1: #E5E5EA
+$light2: #B6B6C0
+$light3: #878896
+
+$sans-font: 'Source Sans Pro'
+$mono-font: 'Source Code Pro'
+
+
+body
+    margin: 0
+    padding: 0
+    background: $main
+    height: 300vh
+    font-family: $sans-font
+    color: $light2
+    position: absolute
+    left: 0px
+    transition: all 0.35s
+
+#dark-overlay
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0,0,0,0.3)
+    display: none
+
+#loading-overlay
+    user-select: none
+    z-index: 10
+    width: 100vw
+    height: 100vh
+    background: $main
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+
+#loading-icon
+    height: 25vh
+
+#navbar
+    user-select: none
+    height: 70px
+    width: calc(100vw - 30px)
+    padding: 15px
+    img
+        height: 70px
+
+#hamburger-containter
+    z-index: 9
+    position: relative
+    float: right
+    width: 45px
+    height: 34px
+    margin: 18px 0
+    cursor: pointer
+    span
+        transition: all 0.35s, opacity 0.25s
+        position: absolute
+        width: 100%
+        height: 2px
+        background: $highlight
+        transform: rotate(0)
+        &:nth-child(1)
+            top: 0
+        &:nth-child(2)
+            top: 16px
+            left: 0
+        &:nth-child(3)
+            top: 32px
+    &.hamburger-open
+        span
+            &:nth-child(1)
+                top: 16px  
+                transform: rotate(-45deg)
+            &:nth-child(2)
+                opacity: 0
+                left: -20px
+            &:nth-child(3)
+                top: 16px  
+                transform: rotate(45deg)
+
+#nav-slider
+    z-index: 8
+    width: 400px
+    height: 100vh
+    background: $main-light
+    position: fixed
+    top: 0
+    right: -400px
+    transition: all 0.35s
+    &.slider-open
+        right: 0
+    
+#nav-menu
+    position: absolute
+    top: 100px
+    margin: 0
+    padding: 0
+    width: 100%
+    list-style: none
+    a
+        color: $light3
+        text-decoration: none
+        transition: all 0.35s
+        &:hover
+            color: $highlight
+    li
+        position: relative
+        padding: 5px
+        text-align: right
+        font-size: 2em
+        text-align: center
+        margin-bottom: 1em
+        span
+            font-family: $mono-font
+            color: $highlight
+            font-size: 0.6em
+            position: absolute
+            top: 0.7em
+            left: 25%
+
+#social-sidebar
+    a
+        ion-icon
+            font-size: 20px
+            color: $light3
+            transform: scale(1) translateX(0)
+            transition: all 0.2s
+    a:hover
+        ion-icon
+            color: $highlight
+            transform: scale(1.2) translateY(-2px)
+
+#main-container
+    color: $light3
+    line-height: 30px
+    width: 80%
+    margin: 0 10%
+    a
+        position: relative
+        color: $highlight
+        font-family: $mono-font
+        text-decoration: none
+        margin: 0 3px
+        letter-spacing: -1px
+
+        &::after
+            content: ''
+            position: absolute
+            height: 1px
+            width: 0
+            background: $highlight
+            left: 50%
+            bottom: -3px
+            transition: all 0.2s
+        
+        &:hover::after
+            width: 95%
+            left: 2.5%
+            
+
