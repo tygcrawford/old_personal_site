@@ -20,6 +20,9 @@ body
     left: 0px
     transition: all 0.35s
 
+.scroll-lock
+    overflow: hidden
+
 #dark-overlay
     position: fixed
     top: 0
@@ -89,7 +92,8 @@ body
 
 #nav-slider
     z-index: 8
-    width: 400px
+    width: 70vw
+    max-width: 350px
     height: 100vh
     background: $main-light
     position: fixed
@@ -110,6 +114,9 @@ body
         color: $light3
         text-decoration: none
         transition: all 0.35s
+        display: flex
+        justify-content: center
+        align-items: center
         &:hover
             color: $highlight
     li
@@ -123,16 +130,21 @@ body
             font-family: $mono-font
             color: $highlight
             font-size: 0.6em
-            position: absolute
-            top: 0.7em
-            left: 25%
+            margin-right: 10px
 
 #social-sidebar
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100px
+    position: fixed
+    bottom: 0
+    left: 0
     a
         ion-icon
-            font-size: 20px
+            font-size: 25px
             color: $light3
-            transform: scale(1) translateX(0)
+            transform: scale(1) translateY(0)
             transition: all 0.2s
     a:hover
         ion-icon
