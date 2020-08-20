@@ -1,0 +1,16 @@
+{
+  "name": "personal_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch public/main.sass:public/main.css",
+    "start": "browser-sync start -ws public/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}a
