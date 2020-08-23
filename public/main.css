@@ -45,20 +45,24 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  transition: right 0.35s; }
+  transition: right 0.35s;
+  z-index: 5; }
   #navbar:hover {
     right: 0px; }
     #navbar:hover img {
       animation-name: spin;
       animation-duration: 0.7s; }
-  #navbar li:first-child {
-    height: 100px; }
+  #navbar li:first-child #nav-header {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center; }
   #navbar li {
     transition: background 0.35s;
     font-size: 2em; }
     #navbar li:hover {
       background: #181c3f; }
-    #navbar li #nav-icon {
+    #navbar li .nav-icon {
       width: 100px;
       height: 100px;
       display: flex;
@@ -69,7 +73,6 @@ body {
       height: 2.5em;
       padding: 0 6px; }
     #navbar li ion-icon {
-      font-family: "Source Code Pro";
       color: #DB5E34;
       font-size: 1.5em; }
     #navbar li a {
@@ -110,10 +113,33 @@ body {
     height: 100px; }
 
 #main-container {
+  position: relative;
   color: #878896;
   line-height: 30px;
   width: calc(100vw-240px);
   padding: 120px 120px; }
+  #main-container #header #header-name {
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #DB5E34; }
+  #main-container #header #header-desc {
+    font-family: "Source Code Pro";
+    font-size: 20px;
+    color: #E5E5EA;
+    margin-bottom: 40px; }
+  #main-container #resume-link {
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 2px solid #DB5E34;
+    color: #DB5E34;
+    letter-spacing: 0.5px;
+    background: rgba(219, 94, 52, 0);
+    transition: background 0.35s ease-in-out; }
+    #main-container #resume-link:hover {
+      background: rgba(219, 94, 52, 0.05); }
+    #main-container #resume-link::after {
+      display: none; }
   #main-container a {
     position: relative;
     color: #DB5E34;

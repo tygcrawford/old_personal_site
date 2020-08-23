@@ -60,21 +60,35 @@ body
     display: flex
     flex-direction: column
     transition: right 0.35s
+    z-index: 5
 
     &:hover
         right: 0px
         img
             animation-name: spin
             animation-duration: 0.7s
+        // li:first-child
+        //     .nav-icon
+        //         left: calc(100% - 100px)
 
     li:first-child
-        height: 100px
+        #nav-header
+            height: 100%
+            display: flex
+            justify-content: left
+            align-items: center
+        // .nav-icon
+        //     position: relative
+        //     left: 0px
+        //     transition: left 0.35s
+            
+            
     li  
         transition: background 0.35s
         &:hover
             background: darken($main-light, 2%)
         font-size: 2em
-        #nav-icon
+        .nav-icon
             width: 100px
             height: 100px
             display: flex
@@ -85,7 +99,6 @@ body
             height: 2.5em
             padding: 0 6px
         ion-icon
-            font-family: $mono-font
             color: $highlight
             font-size: 1.5em
         a
@@ -127,10 +140,35 @@ body
         height: 100px
 
 #main-container
+    position: relative
     color: $light3
     line-height: 30px
     width: calc(100vw-240px)
     padding: 120px 120px
+    #header
+        #header-name
+            font-weight: 900
+            font-size: 60px
+            margin-bottom: 40px
+            color: $highlight
+        #header-desc
+            font-family: $mono-font
+            font-size: 20px
+            color: $light1
+            margin-bottom: 40px
+    #resume-link
+        font-size: 20px
+        padding: 10px 40px
+        border: 2px solid $highlight
+        color: $highlight
+        letter-spacing: 0.5px
+        background: rgba($highlight, 0)
+        transition: background 0.35s ease-in-out
+        &:hover
+            background: rgba($highlight, 0.05)
+        &::after
+            display: none
+
     a
         position: relative
         color: $highlight

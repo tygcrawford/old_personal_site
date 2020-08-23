@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch public/main.sass:public/main.css",
-    "start": "browser-sync start -ws public/"
+    "start": "browser-sync start -ws public/",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy"
   },
   "keywords": [],
   "author": "",
