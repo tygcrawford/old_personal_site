@@ -87,12 +87,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100px;
   position: fixed;
   bottom: 100px;
-  left: 0; }
+  left: 10px; }
   #social-sidebar a {
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
     #social-sidebar a ion-icon {
       font-size: 30px;
       color: #878896;
@@ -103,16 +102,18 @@ body {
     transform: scale(1.2) translateY(-2px); }
   #social-sidebar::after {
     content: "";
-    position: relative;
     background: #878896;
-    width: 100px;
+    position: absolute;
+    bottom: -100px;
+    left: calc(50% - 1px);
+    width: 2px;
     height: 100px; }
 
 #main-container {
   color: #878896;
   line-height: 30px;
-  width: 80%;
-  margin: 0 10%; }
+  width: calc(100vw-240px);
+  padding: 120px 120px; }
   #main-container a {
     position: relative;
     color: #DB5E34;

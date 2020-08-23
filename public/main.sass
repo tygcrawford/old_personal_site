@@ -103,12 +103,11 @@ body
     display: flex
     flex-direction: column
     justify-content: space-between
-    height: 100px
     position: fixed
     bottom: 100px
-    left: 0
+    left: 10px //47.5?
     a
-        margin-bottom: 10px
+        margin-bottom: 15px
         ion-icon
             font-size: 30px
             color: $light3
@@ -120,16 +119,18 @@ body
             transform: scale(1.2) translateY(-2px)
     &::after
         content: ''
-        position: relative
         background: $light3
-        width: 100px
+        position: absolute
+        bottom: -100px
+        left: calc(50% - 1px)
+        width: 2px
         height: 100px
 
 #main-container
     color: $light3
     line-height: 30px
-    width: 80%
-    margin: 0 10%
+    width: calc(100vw-240px)
+    padding: 120px 120px
     a
         position: relative
         color: $highlight
