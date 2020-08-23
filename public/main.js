@@ -23,12 +23,4 @@ window.onbeforeunload = () => { this.scrollTo(0,0) };
 //     }, speed);
 // }
 
-$(() => {
-    $("#hamburger-containter").click(() => {
-        $("#hamburger-containter").toggleClass("hamburger-open");
-        $("#nav-slider").toggleClass("slider-open");
-        $("#dark-overlay").fadeToggle(350);
-        $("body").toggleClass("scroll-lock")
-    });
-});
 

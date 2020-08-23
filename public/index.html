@@ -1,88 +1,95 @@
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Ty Crawford</title>
-    
-    
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.16.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.16.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.16.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.16.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.16.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="favicon16.png" sizes="16x16"/>
-    <link rel="icon" href="favicon32.png" sizes="32x32"/>
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <link rel="manifest" href="manifest.json" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ty Crawford</title>
+        
+        <!-- Firebase Includes -->
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/7.16.0/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/7.16.0/firebase-auth.js"></script>
+        <script defer src="/__/firebase/7.16.0/firebase-database.js"></script>
+        <script defer src="/__/firebase/7.16.0/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/7.16.0/firebase-storage.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+        <!-- Favicon Includes -->
+        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href="favicon16.png" sizes="16x16"/>
+        <link rel="icon" href="favicon32.png" sizes="32x32"/>
+        <link rel="apple-touch-icon" href="logo192.png" />
+        <link rel="manifest" href="manifest.json" />
 
-<body>
-    <div id="navbar">
-        <img src="logo.svg">
-        <div id="hamburger-containter">
-            <span></span>
-            <span></span>
-            <span></span>
+        <!-- Font Includes -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <!-- JQuery Include -->
+
+        <!-- Style Includes -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <ul id="navbar">
+            <li>
+                <a href="#">
+                    <div id="nav-icon"><img src="logo.svg"></div>
+                    <div id="nav-label">Ty Crawford</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div id="nav-icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+                    <div id="nav-label">About Me</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div id="nav-icon"><ion-icon name="podium"></ion-icon></div>
+                    <div id="nav-label">Skills</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div id="nav-icon"><ion-icon name="mail"></ion-icon></div>
+                    <div id="nav-label">Contact Me</div>
+                </a>
+            </li>
+        </ul>
+
+        <div id="main-container">
+            hola
         </div>
-        <div id="nav-slider">
-            <ul id="nav-menu">
-                <li>
-                    <a href="#"><span>[0]</span>Test 1</a>
-                </li>
-                <li>
-                    <a href="#"><span>[1]</span>About Me</a>
-                </li>
-                <li>
-                    <a href="#"><span>[2]</span>Test 3</a>
-                </li>
-            </ul>
+
+        <div id="social-sidebar">
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-codepen"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
-    </div>
 
-    <div id="main-container">
-        hola
-    </div>
+        <!-- <div id="loading-overlay">
+            <svg id="loading-icon" data-name="loading-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413.03 499.74">
+                <defs>
+                    <style>
+                        .cls-1{fill:none;stroke:#db5e34;stroke-miterlimit:10;stroke-width:3px;}
+                        .cls-2{font-size:127.09px;font-family:Raleway-Black, Raleway;font-weight:800;letter-spacing:0.09em;}
+                        .cls-3{letter-spacing:0.1em;}
+                    </style>
+                </defs>
+                <title>logo</title>
+                <rect id="toprect" class="cls-1" x="105.47" y="105.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
+                <rect class="cls-1" x="105.47" y="105.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
+                <rect id="bttmrect" class="cls-1" x="105.47" y="105.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
+                <text fill="#db5e34" class="cls-2" transform="translate(121.3 295.75)">
+                    T<tspan class="cls-3" x="90.61" y="0">C</tspan>
+                </text>
+            </svg>
+        </div> -->
 
-    <div id="social-sidebar">
-        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-codepen"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-    </div>
-
-    <div id="dark-overlay"></div>
-    <!-- <div id="loading-overlay">
-        <svg id="loading-icon" data-name="loading-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413.03 499.74">
-            <defs>
-                <style>
-                    .cls-1{fill:none;stroke:#db5e34;stroke-miterlimit:10;stroke-width:3px;}
-                    .cls-2{font-size:127.09px;font-family:Raleway-Black, Raleway;font-weight:800;letter-spacing:0.09em;}
-                    .cls-3{letter-spacing:0.1em;}
-                </style>
-            </defs>
-            <title>logo</title>
-            <rect id="toprect" class="cls-1" x="105.47" y="105.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
-            <rect class="cls-1" x="105.47" y="105.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
-            <rect id="bttmrect" class="cls-1" x="105.47" y="105.47" width="289.05" height="289.05" transform="translate(560.07 249.87) rotate(135)"/>
-            <text fill="#db5e34" class="cls-2" transform="translate(121.3 295.75)">
-                T<tspan class="cls-3" x="90.61" y="0">C</tspan>
-            </text>
-        </svg>
-    </div> -->
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-</body>
-
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
 </html>
